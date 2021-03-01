@@ -1,5 +1,5 @@
 /**
- * Used resources online to assist me in coding the "Wrapping Up" section part of the tutorial.
+ * Used resources online to assist me in coding the "Wrapping Up" section part of the react tic tac toe tutorial.
  * Source:
  * https://github.com/kelanwu/react-tic-tac-toe
  */
@@ -105,7 +105,9 @@ class Game extends React.Component {
           'Go to game start'
       return (
           <li key={move}>
-            <button onClick={() => this.jumpTo(move)}>{desc}</button>
+            <button
+                className={move ===stepNumber ? 'move-list-item-selected' : ''}
+                onClick={() => this.jumpTo(move)}>{desc}</button>
           </li>
       );
     });
