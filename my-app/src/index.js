@@ -1,3 +1,9 @@
+/**
+ * Used resources online to assist me in coding the "Wrapping Up" section part of the tutorial.
+ * Source:
+ * https://github.com/kelanwu/react-tic-tac-toe
+ */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
