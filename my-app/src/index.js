@@ -26,7 +26,25 @@ class Board extends React.Component {
     );
   }
 
+  //using for loop to create squares
   render() {
+    const size = 3;
+    let squares = [];
+    for (let i = 0; i < size; i++) {
+      let row =[];
+      for (let j= 0; j < size; j++) {
+        row.push(this.renderSquare(i * size + j));
+      }
+      squares.push(<div key={i} className="board-row">{row}</div>);
+    }
+    return (
+      <div>{squares}</div>
+   );
+  }
+
+
+  //hardcoded squares
+  /*render() {
     return (
         <div>
           <div className="board-row">
@@ -46,7 +64,7 @@ class Board extends React.Component {
           </div>
         </div>
     );
-  }
+  }*/
 }
 
 class Game extends React.Component {
